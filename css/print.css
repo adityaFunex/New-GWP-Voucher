@@ -1,0 +1,119 @@
+@media print {
+
+    .logoContainer img {
+        height: 25px;
+    }
+
+    span.logoText {
+        font-size: 23px;
+    }
+
+    .logoContainer {
+        margin-bottom: 20px;
+    }
+
+    .voucherCart-content h1 {
+        gap: 0px 7px;
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+
+    .aboutVoucher-box span {
+        font-size: 13px;
+        color: #fff;
+        padding-inline: 4px;
+    }
+
+    .issueGift-box {
+        padding: 7px;
+        width: 65%;
+        border-radius: 6px;
+    }
+
+
+    .issueGift-col span {
+        font-size: 11px;
+        width: 50%;
+    }
+
+    .rightVoucher-heading h2 {
+        font-size: 22px;
+        line-height: 19px;
+    }
+
+    .rightVoucher-heading span {
+        font-size: 15px;
+    }
+
+    .rightVoucher-heading {
+        margin-bottom: 10px;
+    }
+
+    p.info {
+        font-size: 12px;
+        gap: 0px 5px;
+        margin-bottom: 10px;
+    }
+
+    p.info span {
+        font-size: 12px;
+        padding-top: 0px;
+    }
+
+    p.infoDetail {
+        font-size: 8px;
+        margin-bottom: 10px;
+        line-height: 11px;
+    }
+
+    p.infoContent {
+        font-size: 8px;
+        margin-bottom: 10px;
+        line-height: 10px;
+    }
+
+    .voucherterms h3 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .voucherterms p {
+        font-size: 7px;
+        color: #404040;
+        line-height: 9px;
+    }
+
+    .leftVoucher-contain {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    
+
+    .aboutVoucher ul {
+        text-align: left;
+    }
+
+    .voucherCover-box {
+        padding-left: 3%;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.33), 0px 0px 38px 1px rgba(0, 0, 0, 0.33);
+        position: relative;
+        padding-top: 6%;
+        border-radius: 35px;
+    }
+
+    .mainContainer {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .voucherCover {
+        max-width: 90%;
+        margin-inline: auto;
+    }
+}

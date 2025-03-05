@@ -1,0 +1,810 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-kai');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mainContainer {
+    height: 100%;
+}
+
+.voucherCover {
+    max-width: 85%;
+    margin: auto;
+}
+
+.voucherMain {
+    padding: 4% 0%;
+}
+
+.voucherCover-box {
+    padding-left: 4%;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.33), 0px 0px 38px 1px rgba(0, 0, 0, 0.33);
+    position: relative;
+    padding-top: 8%;
+    border-radius: 64px;
+    filter: drop-shadow(0 0 19px rgba(0, 0, 0, 0.33));
+    background-image: linear-gradient(0deg, #d5d5d5 0%, #ffffff 56%, #ffffff 100%);
+}
+
+.voucherCover-box::before {
+    content: "";
+    width: 45%;
+    background-image: url(https://res.cloudinary.com/greatworkperks/image/upload/f_auto,q_40/c_scale,w_auto,dpr_auto/greatwork-perks/leftbg_aqa6kd.png);
+    background-position: top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    border-radius: 35px;
+}
+.logoContainer img{
+    height: 30px;
+}
+.voucherCover-box::after {
+    content: "";
+    width: 65%;
+    height: 100%;
+    background-image: url(https://res.cloudinary.com/greatworkperks/image/upload/f_auto,q_40/c_scale,w_auto,dpr_auto/greatwork-perks/mid-bg_kmtujg.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+}
+
+.Mainvoucher-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -18px;
+}
+
+.leftVoucher-col {
+    width: 45%;
+    flex: 0 0 auto;
+    padding-inline: 18px;
+}
+
+.rightVoucher-col {
+    width: 55%;
+    flex: 0 0 auto;
+    padding-inline: 18px;
+}
+
+.logoContainer {
+    margin-bottom: 65px;
+    display: inline-flex;
+    width: fit-content;
+    flex-direction: column;
+}
+
+span.logoText {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+}
+
+.voucherCart-content h1 {
+    text-transform: uppercase;
+    display: flex;
+    gap: 0px 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 55px;
+    font-family: 'Bebas Kai', sans-serif;
+}
+
+.voucherCart-content h1 span {
+    color: #FFD200;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.aboutVoucher ul li+li {
+    margin-top: 16px;
+}
+
+.aboutVoucher-box span {
+    font-size: 12px;
+    color: #fff;
+}
+
+.aboutVoucher-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -4px;
+}
+
+.aboutVoucher-box span {
+    width: 50%;
+    flex: 0 0 auto;
+    padding-inline: 10px;
+}
+
+.aboutVoucher {
+    margin-bottom: 45px;
+}
+
+.issueGift-box {
+    padding: 20px;
+    background-color: #1C1F43;
+    width: 67%;
+    border-radius: 9px;
+}
+
+.issueGift-col span {
+    font-size: 14px;
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+span.issueHeading {
+    color: #FFD200;
+    font-weight: 600;
+    line-height: normal;
+}
+
+span.issueContent {
+    color: #fff;
+    font-weight: 500;
+}
+
+.issueGift-col {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.issueGift-box ul li+li {
+    margin-top: 9px;
+}
+
+.rightVoucher-content {
+    text-align: right;
+}
+
+.rightVoucher-heading h2 {
+    font-weight: 800;
+    font-size: 57px;
+    color: #0cb1ff;
+}
+
+span.rightVoucher-headingImage {
+    display: inline-block;
+    width: 100%;
+    flex: 0 0 auto;
+}
+span.rightVoucher-headingImage img {
+    height: 30px;
+}
+span.rightVoucherText {
+    color: #30356C;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.rightVoucher-heading {
+    margin-bottom: 47px;
+}
+
+p.info {
+    color: #30356C;
+    font-weight: 400;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    gap: 0px 5px;
+    justify-content: end;
+    margin-bottom: 23px;
+}
+
+p.info span {
+    font-size: 21px;
+}
+
+p.infoDetail {
+    font-weight: 700;
+    color: #30356c;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+p.infoContent {
+    font-size: 15px;
+    color: #4a4a4a;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+p.infoContent span {
+    font-weight: 700;
+    color: #3B3B3B;
+}
+
+.voucherterms h3 {
+    font-weight: 700;
+    color: #3B3B3B;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.voucherterms p {
+    font-size: 12px;
+    color: #404040;
+}
+
+.leftVoucher-contain {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+}
+.rightVoucher-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px 0px;
+}
+
+
+/* responsive Css */
+@media screen and (max-width:1680px) {
+    .logoContainer img {
+        height: 30px;
+    }
+
+    span.logoText {
+        font-size: 25px;
+    }
+
+    .logoContainer {
+        margin-bottom: 50px;
+    }
+
+    .voucherCart-content h1 {
+        gap: 0px 9px;
+        font-size: 65px;
+        margin-bottom: 40px;
+    }
+
+    .aboutVoucher ul li+li {
+        margin-top: 10px;
+    }
+
+    .voucherCover-box::before {
+        width: 47%;
+        background-position: 100% 100%;
+        background-size: 120% 111%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 35px;
+    }
+
+    .issueGift-box {
+        padding: 20px;
+        width: 74%;
+        border-radius: 9px;
+    }
+
+    .rightVoucher-heading h2 {
+        font-size: 50px;
+    }
+
+   
+    p.info span {
+        font-size: 21px;
+        padding-top: 0px;
+    }
+
+    p.info {
+        font-size: 21px;
+        gap: 0px 5px;
+        margin-bottom: 23px;
+    }
+
+    .rightVoucher-heading {
+        margin-bottom: 40px;
+    }
+
+    p.infoDetail {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    p.infoContent {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .issueGift-col span {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .issueGift-box ul li+li {
+        margin-top: 9px;
+    }
+}
+
+@media screen and (max-width:1480px) {
+    .voucherCover {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .rightVoucher-col {
+        width: 54%;
+        padding-inline: 15px;
+    }
+
+    .leftVoucher-col {
+        width: 46%;
+        padding-inline: 15px;
+    }
+
+    .Mainvoucher-row {
+        margin-inline: -15px;
+    }
+
+    .logoContainer img {
+        height: 25px;
+    }
+
+    span.logoText {
+        font-size: 25px;
+    }
+
+    .logoContainer {
+        margin-bottom: 40px;
+    }
+
+    .voucherCart-content h1 {
+        gap: 0px 9px;
+        font-size: 55px;
+        margin-bottom: 35px;
+    }
+
+    .aboutVoucher {
+        margin-bottom: 40px;
+    }
+
+    .aboutVoucher-box span {
+        width: 40%;
+        flex: 0 0 auto;
+        padding-inline: 10px;
+    }
+
+    .issueGift-box {
+        padding: 15px;
+        width: 74%;
+        border-radius: 9px;
+    }
+
+    .issueGift-box ul li+li {
+        margin-top: 9px;
+    }
+
+    .issueGift-col span {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .rightVoucher-heading h2 {
+        font-size: 30px;
+    }
+
+  
+
+    p.info {
+        font-size: 21px;
+        gap: 0px 5px;
+        margin-bottom: 21px;
+    }
+
+    .rightVoucher-heading {
+        margin-bottom: 30px;
+    }
+
+    p.info span {
+        font-size: 21px;
+        padding-top: 0px;
+    }
+
+    p.info {
+        font-size: 21px;
+        gap: 0px 5px;
+        margin-bottom: 21px;
+    }
+
+    p.infoDetail {
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+
+    p.infoContent {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .voucherterms h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .voucherterms p {
+        font-size: 10px;
+        color: #404040;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .voucherCover {
+        max-width: 100%;
+        margin: auto;
+        padding-inline: 15px;
+    }
+    span.rightVoucher-headingImage img {
+        height: 25px;
+    }
+    span.rightVoucherText {
+        font-size: 22px;
+    }
+    p.info {
+        font-size: 19px;
+        gap: 0px 5px;
+        margin-bottom: 18px;
+    }
+    .rightVoucher-heading{
+        gap: 5px 0px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .leftVoucher-col {
+        width: 50%;
+        padding-inline: 15px;
+    }
+
+    .rightVoucher-col {
+        width: 50%;
+        padding-inline: 15px;
+    }
+
+    .logoContainer img {
+        height: 18px;
+    }
+
+    span.logoText {
+        font-size: 20px;
+    }
+
+    .voucherCart-content h1 {
+        gap: 0px 9px;
+        font-size: 39px;
+        margin-bottom: 25px;
+    }
+
+    .aboutVoucher ul li+li {
+        margin-top: 4px;
+    }
+
+    .aboutVoucher-box span {
+        font-size: 10px;
+        color: #fff;
+    }
+
+    .aboutVoucher {
+        margin-bottom: 20px;
+    }
+
+    .issueGift-box {
+        padding: 10px;
+        width: 69%;
+        border-radius: 9px;
+    }
+
+    .issueGift-col span {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .issueGift-box ul li+li {
+        margin-top: 7px;
+    }
+
+    .rightVoucher-heading h2 {
+        font-size: 28px;
+    }
+
+
+    .rightVoucher-heading {
+        margin-bottom: 15px;
+    }
+
+    p.info {
+        font-size: 16px;
+        gap: 0px 5px;
+        margin-bottom: 15px;
+    }
+
+    p.info span {
+        font-size: 16px;
+        padding-top: 0px;
+    }
+
+    p.infoDetail {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.infoContent {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+
+    .voucherterms h3 {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .voucherterms p {
+        font-size: 7px;
+        color: #404040;
+    }
+
+    .leftVoucher-col {
+        width: 50%;
+        padding-inline: 10px;
+    }
+
+    .rightVoucher-col {
+        width: 50%;
+        padding-inline: 10px;
+    }
+
+    .Mainvoucher-row {
+        margin-inline: -10px;
+    }
+
+    .voucherCover-box::before {
+        width: 50%;
+        background-position: 100% 100%;
+        background-size: 120% 118%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 35px;
+    }
+    span.rightVoucher-headingImage img {
+        height: 20px;
+    }
+    span.rightVoucherText {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .issueGift-box {
+        padding: 7px;
+        width: 75%;
+        border-radius: 9px;
+    }
+
+    .voucherCover-box {
+        padding-left: 4%;
+        padding-bottom: 25px;
+        padding-right: 25px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.33), 0px 0px 38px 1px rgba(0, 0, 0, 0.33);
+        position: relative;
+        padding-top: 8%;
+        border-radius: 36px;
+    }
+}
+
+@media screen and (max-width:676px) {
+    .logoContainer img {
+        height: 15px;
+    }
+
+    span.logoText {
+        font-size: 15px;
+    }
+
+    .logoContainer {
+        margin-bottom: 20px;
+    }
+
+    .voucherCart-content h1 {
+        gap: 0px 7px;
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+
+    .aboutVoucher-box span {
+        font-size: 9px;
+        color: #fff;
+    }
+
+    .issueGift-col span {
+        font-size: 9px;
+        width: 50%;
+    }
+
+    .rightVoucher-heading h2 {
+        font-size: 22px;
+        line-height: 19px;
+    }
+
+   
+
+    .rightVoucher-heading {
+        margin-bottom: 10px;
+    }
+
+    p.info {
+        font-size: 12px;
+        gap: 0px 5px;
+        margin-bottom: 10px;
+    }
+
+    p.info span {
+        font-size: 12px;
+        padding-top: 0px;
+    }
+
+    p.infoDetail {
+        font-size: 8px;
+        margin-bottom: 10px;
+        line-height: 11px;
+    }
+
+    p.infoContent {
+        font-size: 8px;
+        margin-bottom: 10px;
+        line-height: 10px;
+    }
+
+    .voucherterms h3 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .voucherterms p {
+        font-size: 7px;
+        color: #404040;
+        line-height: 9px;
+    }
+
+    .leftVoucher-contain {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:575px){
+    .voucherCover-box::before {
+        width: 100%;
+        background-image: none;
+        background-position: 100% 100%;
+        background-size: 120% 118%;
+        height: 52%;
+        z-index: -1;
+        border-radius: 35px 35px 0px 0px;
+        background-color: #30356c;
+    }
+    .leftVoucher-col {
+        width: 100%;
+        padding-inline: 10px;
+    }
+    .rightVoucher-col {
+        width: 100%;
+        padding-inline: 10px;
+    }
+    .voucherCover-box::after{
+        display: none;
+    }
+    .rightVoucher-content {
+        text-align: right;
+        margin-top: 50px;
+    }
+    .logoContainer {
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .logoContainer img {
+        height: 15px;
+        max-width: 100%;
+    }
+    .voucherCart-content h1 {
+        gap: 0px 7px;
+        font-size: 28px;
+        margin-bottom: 17px;
+        text-align: center;
+        justify-content: center;
+    }
+    .rightVoucher-content {
+        text-align: left;
+        margin-top: 50px;
+    }
+    p.info {
+        font-size: 12px;
+        gap: 0px 5px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .rightVoucher-heading h2 {
+        font-size: 22px;
+        line-height: 19px;
+        text-align: center;
+    }
+    span.rightVoucher-headingImage {
+        text-align: center;
+    }
+    span.rightVoucherText {
+        font-size: 19px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:475px){
+    .voucherCover-box::before {
+        width: 100%;
+        height: 49%;
+        z-index: -1;
+        border-radius: 35px 35px 0px 0px;
+        background-color: #30356c;
+    }
+}
+@media screen and (max-width:375px){
+    .voucherCover-box::before {
+        width: 100%;
+        height: 47%;
+        z-index: -1;
+        border-radius: 35px 35px 0px 0px;
+        background-color: #30356c;
+    }
+    span.rightVoucher-headingImage img {
+        height: 17px;
+    }
+    span.rightVoucherText {
+        font-size: 18px;
+        text-align: center;
+    }
+}
